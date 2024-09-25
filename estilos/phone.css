@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 760px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+       background-image: none;
+       background-color: #70bf70;
+
+    }
+
+    img{
+        display: block;
+        height: 200px;
+        margin: auto;
+        width: 100%;
+        
+    }
+
+    #tela-login{
+        width: 250px;
+        height: 515px;
+    }
+
+    .formulario{
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    .formulario > h1{
+        font-size: 1em;
+      
+        
+    }
+
+    .formulario > p{
+        font-size: .9em;
+        margin-bottom: 0;
+    }
+
+    label{
+        display: none;
+    }
+    .campo{
+        display: block;
+        height: 40px;
+        border-radius: 8px;
+        margin-left: 0;
+        
+    }
+
+    .campo input{
+        width: 90%;
+    }
+
+    input[type="submit"] {
+        display: block;
+        font-size: 1em;
+      width: 95%;
+        height: 40px;
+        background-color: #70bf70;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 5px;
+        margin-top: 25px;
+}
+
+input[type="email"]
+{
+    margin-left: 5px;
+}  
+
+input[type="password"]{
+    margin-left: 5px;
+    
+}
+.formulario a{
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+}
+
+

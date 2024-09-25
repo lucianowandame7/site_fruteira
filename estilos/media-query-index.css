@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+
+@media screen and (max-width: 760px) {
+   
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    header{
+        text-align: center;
+        height: 300px;
+    }
+
+
+    header .logo{
+        margin-left: 5px ;
+        width: 30%;
+        height: 100%;
+    }
+
+    .tags{
+        margin-right: 0;
+    }
+
+    .tags h1{
+      margin-left: 15%;
+         
+    }
+  
+    header .funcoes{
+        display: block;
+        ;
+    }
+   
+
+.pesquisar{
+    display: block; 
+  }
+        
+
+.pesquisar input{
+    width: 58%;
+    margin-left: 30%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.pesquisar input::placeholder{
+    font-size: 95%;
+   padding: 5px;
+    }
+
+
+.barra{
+    width: 650px;
+    }
+
+.lupa{
+    display: none;
+    }
+
+
+.menus{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 0;
+    
+    }
+.perfil{
+    display: flex;
+    margin-left: 0;
+        
+     }
+
+    
+.carrinho{
+    display: flex;
+    margin-left: 20%;
+    
+}
+
+.funcoes {
+    display: flex;
+    margin-top: 1%;
+    margin-left: 25%;
+    margin-right: 3%;
+    padding-right: 9%;
+    text-align: center;    
+    }
+
+.funcoes .meu-carrinho{
+    margin-left: 13%;
+    }
+    
+
+
+
+
+
+    
+    main{
+        padding: 0;
+    }
+    main h2{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 4em;
+        margin-top: 8%;
+
+    }
+
+    main .catalago{
+        padding: 0;
+    }
+
+    .itens-catalago{
+        padding-right: 2.5%;
+        margin-left: 5.5%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+   
+   .fruta-c{
+    padding-right: 7%;
+    padding-left: 0;
+   }
+   
+
+    .catalago{
+        
+        padding: 5px;
+        display:flex ;
+        justify-content: center;
+    }
+
+   
+
+    .catalago a{
+        padding: 0;
+        display: flex;
+       justify-content: center;
+       margin-right: 5%;
+       margin-left: 0;
+       
+    }
+
+    .catalago img{
+        padding: 0;
+    }
+
+    .catalago :first-child{
+        padding-left: 0px;
+    }
+   
+.conteudo{
+    flex-direction: column;
+        }
+
+.conteudo .produtos{
+    margin-left: 0;
+        }
+
+footer h3{
+    font-size: 1em;
+        }
+        
+    }

@@ -1,0 +1,104 @@
+@charset "UTF-8"; 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+   background-image: linear-gradient(to left,  #4cec4c, #70bf70 );
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 98vw;
+   height: 250vh;
+   
+
+}
+
+
+img{
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+#tela-login{
+    background-color: rgb(255, 252, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    margin-top: 40%;
+    position: absolute;
+    padding: 50px;
+    top: 50%;
+    left: 50%;
+    font-family:'Poppins', sans-serif; 
+    transform: translate(-50%, -50%);
+   
+}
+
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+label{
+    margin-left: 3%;
+}
+input{
+    border-color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 15px;
+    width: 400px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-left: 3%;
+    
+}
+
+
+input[type="submit"]{
+    background-color: rgb(112, 191, 112);
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 55%;
+    height: 30%;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 10px;
+    
+    }
+
+    .campos > p{
+        margin-left: 0;
+        margin-top: 20px;
+        font-weight: bold;
+    
+      
+    }
+input[type="submit"]:hover{
+    background-color: darkseagreen
+}
+
+button{
+    margin-left: 20%;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color:rgb(112, 191, 112) ;
+    width: 55%;
+    height: 30%;
+    border: none;
+}

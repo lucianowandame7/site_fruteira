@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fruteira açucena</title>
+    <link rel="stylesheet" href="estilos/login_style.css">
+    <link rel="stylesheet" href="estilos/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
+</head>
+
+
+<body>
+     <main>
+        <section id="tela-login">
+              
+            <div class="imagem">
+            <img src="imagens/logo.jpg" alt="Logotipo">
+            </div>
+
+            <div class="formulario">
+            <h1> Seja bem-vindo novamente!</h1>
+            <p>Insira por favor o seu email e sua senha abaixo.</p>
+        
+
+            <form action="cadastro.php">
+
+            <div class="campo">
+            <label for="iemail">Email:</label>
+            <br>
+            <input type="email" placeholder="Insira o seu email" name="email" id="iemail" required maxlength="30">
+            </div>
+            <br>
+
+            <div class="campo">
+            <label for="isenha">Senha:</label>
+            <br>
+            <input type="password" placeholder="Insira a sua senha" name="senha" id="isenha" required minlength="8" maxlength="20">
+            </div>
+            
+                              
+          <input type="submit" value="Entrar">
+            <a href="cadastro.html">Novo por aqui? Cadastra-se já!</a>
+            </form>                            
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

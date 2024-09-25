@@ -1,0 +1,178 @@
+
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0; 
+    font-family: "Roboto", sans-serif;
+}
+
+
+#inicio {
+    background-color: rgb(112, 191, 112);
+    width: 100%;
+    height: 200px;
+    top: 0;
+}
+
+#tags{
+    display: flex;
+    height: 150px;
+}
+
+#barra{
+    width: 475px;
+    height: 25px;
+    border: none;
+    outline: none;
+    padding-right: 0px;
+    margin-left: 33%;
+}
+
+#pesquisar{
+    display: flex;
+}
+
+#pesquisar input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#lupa{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+h1{
+    margin-left: 27%;
+    font-size: 50px;
+    font-family: "Lato", sans-serif;
+}
+
+#logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 5%;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+#lupa{
+    height: 27px;
+    background-color: white;
+    border-radius: px;
+    margin-left: 0;
+    }
+    
+    #perfil{
+        height: 27px;
+        margin-left: 70px;
+    }
+    
+    .carrinho{
+    height: 27px;
+    margin-left: 100px;
+    cursor: pointer;
+    }
+
+    #id{
+        margin-left: 78%;
+        font-size: 12px;
+    }
+
+    #id a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    
+    body{
+        background-color:white;
+        margin: 0;
+        padding: 0; 
+        font-family: "Roboto", sans-serif;
+    }
+    
+    
+    #id{
+        margin-left: 79%;
+        font-size: 12px;
+    }
+    
+     #catalago{
+    margin-top: 40px;
+    display: flex;
+    margin-left: 30%;
+    height: 70px;
+     }
+    
+     #catalago img{
+        margin-left: 55px;
+        border-radius: 15px;
+        border: 2px solid #0000;
+        border-color: black;
+     }
+        
+     #itens-catalago{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 31%;
+    }
+    
+    #itens-catalago a{
+        margin-left: 60px;
+    }
+    
+    
+    #main{
+        display: flex;
+        justify-content: center;
+    margin-top: 70px ;
+    
+    }
+
+    #produtos{
+        background-color: white;
+        margin: 50px;
+        width:200px;
+        height: 320px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 12px #aaaa;
+        
+    }
+    
+    #produtos img {
+        width: 95%;
+        margin-top: 5px
+    }
+    
+    #produtos p{
+        font-size: 1.2rem;
+        margin-left: 40px;
+    }
+    
+    #produtos #refri{
+        font-size: 1.2rem;
+        margin-left: 57px;
+    }
+
+    #produtos button{
+        background-color:  rgb(112, 191, 112); 
+        height: 30px;
+        border: none;
+        padding: 4px;
+        width: 80%;
+        color: white;
+        margin-left: 15px;
+        border-radius: 10px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    
+    #produtos button:hover{
+        background-color: rgb(133, 199, 133);
+    }
+
+    #produtos span {
+        margin-left: 65px;
+    }
