@@ -3,6 +3,10 @@
 
 @media screen and (max-width: 760px) {
    
+
+    html, body{
+        overflow: hidden;
+    }
     *{
         padding: 0;
         margin: 0;
@@ -15,9 +19,7 @@
 
 
     header .logo{
-        margin-left: 5px ;
-        width: 30%;
-        height: 100%;
+        display: none;
     }
 
     .tags{
@@ -25,37 +27,37 @@
     }
 
     .tags h1{
-      margin-left: 15%;
+      text-align: center;
          
     }
   
     header .funcoes{
         display: block;
-        ;
+        
     }
-   
-
-.pesquisar{
-    display: block; 
-  }
         
 
 .pesquisar input{
-    width: 58%;
-    margin-left: 30%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+   
 }
 
 .pesquisar input::placeholder{
     font-size: 95%;
+    
    padding: 5px;
     }
 
-
+input.barra{
+    display: flex;
+    margin-left: 5%;
+    margin: 0;
+    padding: 0;
+}
 .barra{
-    width: 650px;
-    }
+    width: 100%;
+}
 
 .lupa{
     display: none;
@@ -64,39 +66,27 @@
 
 .menus{
     display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 0;
-    
+    flex-direction: row;
+    margin-top: 35px;
     }
-.perfil{
-    display: flex;
-    margin-left: 0;
-        
-     }
 
-    
-.carrinho{
-    display: flex;
-    margin-left: 20%;
-    
+    .perfil{
+        margin-left: 0;
+        flex: row;
+        display: flex; /* Ativa o Flexbox para as imagens */
+        justify-content: center;
+    }
+
+    .carrinho{
+        margin-left: 0;
+    }
+
+
+
+
+h2{
+    text-shadow: none;
 }
-
-.funcoes {
-    display: flex;
-    margin-top: 1%;
-    margin-left: 25%;
-    margin-right: 3%;
-    padding-right: 9%;
-    text-align: center;    
-    }
-
-.funcoes .meu-carrinho{
-    margin-left: 13%;
-    }
-    
-
-
 
 
 
