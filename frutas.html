@@ -6,24 +6,39 @@
     <title>Frutas</title>
     <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/frutas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
       <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
-    <div id="inicio">
-        <div id="tags">
-             <img src="imagens/logo.jpg" alt="logo" id="logo">
-            <h1>AÇUCENA</h1>
-        </div>
-        <div id="pesquisar">       
-        <input type="text" placeholder="Busque os seus produtos aqui..." id="barra">  
-                <img src="imagens/lupa.png" alt="" id="lupa">
-                <a href="login.html" id="perfil"><img src="imagens/perfil.png" alt="perfil" id="perfil"></a>
-                <i><img src="imagens/carrinho.png" alt="carrinho" class="carrinho"></i>
-            </div> 
-            <div id="id">
-            <a href="login.html">Entrar | Cadastrar</a> 
-            <a href="carrinho.html" style="margin-left: 40px;">Meu Carrinho</a>
+      <header>
+        <div class="tags">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
+            <div class="itens">
+                <a href="#">Editar perfil</a>
+                <a href="#">Ver historico de compra</a>
             </div>
+                <img src="imagens/logo.jpg" alt="logo" class="logo">
+                <h1>AÇUCENA</h1>
+        </div>
+
+        <div class="pesquisar">       
+                <input type="text" placeholder="Busque os seus produtos aqui..." class="barra">  
+                <img src="imagens/lupa.png" alt="pesquisar" class="lupa">
+            
+                <div class="entrar">
+                    <img src="imagens/perfil.png" alt="perfil" class="perfil">
+                    <a href="login.html" class="logar">Entrar</a> 
+                    </div>
+                    <div class="compras">
+                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
+                    <a href="carrinho.html" class="meu-carrinho">Carrinho</a>
+                </div>  
+        </div>  
+    </header>
 
 <!--Parte dos catalagos, FRUTAS< VERDURAS, LIMPEZA e GERAL-->
 
@@ -125,5 +140,36 @@
         </div>
             
    </div> 
+
+   <footer>
+    <div class="informacoes">
+        
+        <h3>Institucional</h3>
+        <h3>Formas de Pagamento</h3>
+        <h3>Entregas</h3>
+        <h3>Fale conosco</h3>
+        <h3>Redes socias</h3>
+       
+    </div>
+    
+    <div class="ctt">
+        <p>(51)99438-7179</p>
+    </div>
+
+    <a href="https://www.instagram.com/fruteiraacucena/" target="_blank"><img src="imagens/instagram.jfif" alt="instagram" class="insta"></a>
+            <p>Sobre nós</p>
+            <p>Politica</p>
+
+            <p>Tele-entrega</p>
+
+            <p>Whatsapp (51)99438-7179</p>
+<br><br><br>
+            <p>Lista dos afazeres</p>
+            <p>Terminar a tela: Cadastro e index </p>
+            <p>Fazer as medias queries: cadastro e index</p>
+            <p>menu cliente/edicao</p>
+            <p>Terminar a parte inferior do site</p>
+            <p>Ver ideias para a index, login e cadastro</p>
+</footer>
 </body>
 </html>
