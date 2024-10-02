@@ -58,8 +58,8 @@ header {
 
 
 .tags h1{
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 425;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
     font-size: 250%;
     font-style: normal;
     margin: 0;
@@ -68,7 +68,6 @@ header {
     top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
 }
 
 
@@ -80,16 +79,12 @@ header {
 
 .pesquisar{
     display: flex;
-  
-   
+    
 }
 .pesquisar input {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding-left: 5px;
-}
-
-.barra{
     width: 40%;
     height: 25px;
     border: none;
@@ -106,47 +101,63 @@ header {
     border-bottom-right-radius: 10px;
 }
 
-.menus{
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-}
-
-.perfil {
-    height: 27px;
-    display: flex;
-    margin-left: 25%;
-      
-}
-
-.carrinho{
-    height: 27px;
-    margin-left: 85%;
-   
-    }
-
-
-.funcoes{
-    margin-left: 75.5%;
-    font-size: 12px;
-    margin-top: 0.5%;
+.entrar{
     text-align: center;
 }
 
-.funcoes a{
+.logar{
+    display: block;
+    margin-top: 5px;
+    margin-left: 15%;
+    font-size: 70%;
     text-decoration: none;
     font-style: normal;
     font-weight: bold;
     color: black;
     text-align: center;
-    margin-right: 13%;
+    margin-right: 10%;
 }
 
-
-.funcoes a:hover{
+.logar:hover{
     text-decoration: underline;
     color: white;
 }
+
+.perfil {
+    height: 27px;
+    display: block;
+    margin-left: 25%;
+      
+}
+
+.compras{
+    text-align: center;
+}
+
+.carrinho{
+    height: 27px;
+    margin-left: 20%;
+    }
+
+    .meu-carrinho{
+        display: block;
+        margin-top: 3.5%;
+        margin-left: 25%;
+        font-size: 70%;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+    }
+
+    .meu-carrinho:hover{
+        text-decoration: underline;
+        color: white;
+    }
+
+
+
 
 
 
