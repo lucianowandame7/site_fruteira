@@ -1,91 +1,157 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetais</title>
     <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/frutas.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/padraoCatalago.css">
+    <link rel="stylesheet" href="estilos/media-query-index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-      <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
-      <header>
+    <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
+    <header>
         <div class="tags">
             <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
             <div class="itens">
                 <a href="#">Editar perfil</a>
                 <a href="#">Ver historico de compra</a>
             </div>
-                <img src="imagens/logo.jpg" alt="logo" class="logo">
-                <h1>AÇUCENA</h1>
+            <img src="imagens/logo.jpg" alt="logo" class="logo">
+            <h1>AÇUCENA</h1>
         </div>
 
-        <div class="pesquisar">       
-                <input type="text" placeholder="Busque os seus produtos aqui..." class="barra">  
-                <img src="imagens/lupa.png" alt="pesquisar" class="lupa">
-            
-                <div class="entrar">
-                    <img src="imagens/perfil.png" alt="perfil" class="perfil">
-                    <a href="login.html" class="logar">Entrar</a> 
-                    </div>
-                    <div class="compras">
-                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
-                    <a href="carrinho.html" class="meu-carrinho">Carrinho</a>
-                </div>  
-        </div>  
-    </header> 
+        <div class="pesquisar">
+            <input type="text" placeholder="Busque os seus produtos aqui..." class="barra">
+            <img src="imagens/lupa.png" alt="pesquisar" class="lupa">
 
- <!--Parte dos catalagos, FRUTAS< VERDURAS, LIMPEZA e GERAL-->
-            <div id="catalago">
-                <a href="frutas.html" ><img src="imagens/frutas.png" alt="frutas" id="catalago"></a>
-                <a href="vegetais.html"><img src="imagens/vegetal.png" alt="vegetais" id="catalago"></a>
-                <a href="limpeza.html"><img src="imagens/limpando-produtos.png" alt="Limpeza" id="catalago"></a>
-                <a href="Alimentos.html" ><img src="imagens/cesta-de-comida.png" alt="alimentos em geral" id="catalago"></a>
+            <div class="entrar">
+                <img src="imagens/perfil.png" alt="perfil" class="perfil">
+                <a href="login.html" class="logar">Entrar</a>
             </div>
-            <div id="itens-catalago">
-            <a>Frutas</a>
-                <a>Vegetais 
+            <div class="compras">
+                <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
+                <a href="carrinho.html" class="meu-carrinho">Carrinho</a>
+            </div>
+        </div>
+    </header>
+
+    <!--Parte dos catalagos, FRUTAS< VERDURAS, LIMPEZA e GERAL-->
+    <main>
+        <nav>
+            <div class="catalago">
+                <a href="frutas.html">
+                    <img src="imagens/frutas.png" alt="frutas" class="catalago">
+                </a>
+                <a href="vegetais.html">
+                    <img src="imagens/vegetal.png" alt="vegetais" class="catalago">
+                </a>
+                <a href="limpeza.html">
+                    <img src="imagens/limpando-produtos.png" alt="Limpeza" class="catalago">
+                </a>
+                <a href="Alimentos.html">
+                    <img src="imagens/cesta-de-comida.png" alt="alimentos em geral" class="catalago">
+                </a>
+            </div>
+
+            <div class="itens-catalago">
+                <a href="frutas.html" class="fruta-c">Frutas</a>
+                <a href="vegetais.html">Vegetais
                     <br>e Legumes</a>
-                <a>Limpeza 
+                <a href="limpeza.html">Limpeza
                     <br>e Higiene</a>
-                <a>Alimentos
+                <a href="Alimentos.html">Alimentos
                     <br> em geral</a>
             </div>
+        </nav>
+        <h2>Vegetais e Legumes em Destaque!</h2>
+        <!--Parte dos prudtos, com IMAGENS, VALOR e BOTÃO-->
+        <section>
+            <div class="conteudo">
+                <div class="produtos">
+                    <img src="imagens/coca_cola.jpg" alt="coca-cola" class="cola">
+                    <p>Coca-cola 2L</p>
+                    <p class="valor">R$ 10,99</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
 
-            <div>
-                <h2 style="color: rgb(112, 191, 112);
-                margin-top: 45px;
-                font-size: 50px;
-                margin-left: 15px;">Vegetais e Legumes em Destaque!</h2>
+                <div class="produtos">
+                    <img src="imagens/carvao3kg.jfif" alt="carvao3kg" class="carvao3kg">
+                    <p>Carvão 3kg</p>
+                    <p class="valor">R$ 15,99</p>
+                    <button id="Adicionar"> Adicionar </button>
+                </div>
+
+                <div class="produtos">
+                    <img src="imagens/carvao5kg.jfif" alt="carvao5kg" class="carvao5kg">
+                    <p>Carvão 5kg</p>
+                    <p class="valor">R$ 22,99</p>
+                    <button id="Adicionar"> Adicionar </button>
+                </div>
             </div>
 
-            <div id="main">
-                <div id="produtos">
-                <img src="imagens/coca_cola.jpg" alt="coca-cola" id="cola">
-                <p>Coca-cola 2L</p>
-                <span>R$ 10,99</span>
-                <button id="Adicionar"> Adicionar </button>
+
+            <div class="conteudo">
+                <div class="produtos">
+                    <img src="imagens/fanta.jpg" alt="Fanta" class="fanta">
+                    <p class="refri">Fanta 2L</p>
+                    <p class="valor">R$ 7,99</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
+
+                <div class="produtos">
+                    <img src="imagens/sprite.jpg" alt="Sprite" class="sprite">
+                    <p id="refri">Sprite 2L</p>
+                    <p class="valor">R$ 7,99</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
+
+                <div class="produtos">
+                    <img src="imagens/batata_b.jpg" alt="Batata branca" class="batata branca">
+                    <p>Batata branca</p>
+                    <p class="valor">R$ 7,98 Kg</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
             </div>
-            <div id="produtos">
-                <img src="imagens/coca_cola.jpg" alt="coca-cola" id="cola">
-                <p>Carvão 3kg</p>
-                <span>R$ 15,99</span>
-                <button id="Adicionar"> Adicionar </button>
+
+            <div class="conteudo">
+                <div class="produtos">
+                    <img src="imagens/tomatel.jpg" alt="Tomate" class="tomate">
+                    <p id="tomate">Tomate longa vida</p>
+                    <p class="valor">R$ 7,98</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
+
+                <div class="produtos">
+                    <img src="imagens/banana_prata.jpg" alt="Banana Prata" class="banana">
+                    <p>Banana Prata</p>
+                    <p class="valor">R$ 6,98 Kg</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
+
+                <div class="produtos">
+                    <img src="imagens/cebola.jpg" alt="Cebola" class="cebola">
+                    <p id="cebola">Cebola</p>
+                    <p class="valor">R$ 3,98 Kg</p>
+                    <button class="Adicionar"> Adicionar </button>
+                </div>
             </div>
-            <div id="produtos">
-                <img src="imagens/coca_cola.jpg" alt="coca-cola" id="cola">
-                <p>Carvão 5kg</p>
-                <span>R$ 22,99</span>
-                <button id="Adicionar"> Adicionar </button>
-            </div>
-            </div>
-        
-            
-   </div> 
+
+        </section>
+    </main>
+
 </body>
+
 </html>

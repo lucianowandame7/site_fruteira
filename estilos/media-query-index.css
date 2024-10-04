@@ -50,15 +50,22 @@
    padding: 5px;
     }
 
+.entrar, .compras{
+    display: block;
+    margin-top: 12%;
+    flex-direction: column;
+    
+}
+
 input.barra{
-    display: flex;
+    display: block;
+    flex-direction: column;
+    width: 100%;
     margin-left: 5%;
     margin: 0;
     padding: 0;
 }
-.barra{
-    width: 100%;
-}
+
 
 .lupa{
     display: none;
