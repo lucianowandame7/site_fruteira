@@ -130,6 +130,10 @@ header {
       
 }
 
+.acoes{
+    display: flex;
+}
+
 .compras{
     text-align: center;
 }

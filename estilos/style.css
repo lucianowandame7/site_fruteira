@@ -19,6 +19,7 @@ mais fraco para o mais forte
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -100,6 +101,10 @@ header {
     border-radius: px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.acoes{
+    display: flex;
 }
 
 .entrar .compras{

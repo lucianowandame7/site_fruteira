@@ -2,170 +2,187 @@
 
 
 @media screen and (max-width: 760px) {
-   
 
-   body{
-    overflow-x: hidden;
-   }
-   
-    *{
+
+    body {
+        overflow-x: hidden;
+    }
+
+    * {
         padding: 0;
         margin: 0;
     }
 
-    header{
+    header {
         text-align: center;
         height: 300px;
     }
 
 
-    header .logo{
+    header .logo {
         display: none;
     }
 
-    .tags{
+    .tags {
         margin-right: 0;
     }
 
-    .tags h1{
-      text-align: center;
-         
+    .tags h1 {
+        text-align: center;
+
     }
-  
-    header .funcoes{
+
+    header .funcoes {
         display: block;
-        
-    }
-        
 
-.pesquisar input{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-   
-}
-
-.pesquisar input::placeholder{
-    font-size: 95%;
-    
-   padding: 5px;
     }
 
-.entrar, .compras{
-    display: block;
-    margin-top: 12%;
-    flex-direction: column;
-    
-}
+    .pesquisar {
+        flex-direction: row;
+        /* Alinha os elementos em uma linha no desktop */
+        justify-content: space-between;
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: column;
+    }
 
-input.barra{
-    display: block;
-    flex-direction: column;
-    width: 100%;
-    margin-left: 5%;
-    margin: 0;
-    padding: 0;
-}
+    .pesquisar input {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
 
+    }
 
-.lupa{
-    display: none;
+    .pesquisar input::placeholder {
+        font-size: 95%;
+        margin-top: 0;
+        padding: 5px;
+    }
+
+    .acoes {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 600px;
+        margin-top: 10px;
+    }
+
+    .entrar,
+    .compras {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+
+    }
+
+    input.barra {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 5%;
+        margin: 0;
+        padding: 0;
     }
 
 
-.menus{
-    display: flex;
-    flex-direction: row;
-    margin-top: 35px;
+    .lupa {
+        display: none;
     }
 
-    .perfil{
+
+    .menus {
+        display: flex;
+        flex-direction: row;
+        margin-top: 35px;
+    }
+
+    .perfil {
         margin-left: 0;
         flex: row;
-        display: flex; /* Ativa o Flexbox para as imagens */
+        display: flex;
+        /* Ativa o Flexbox para as imagens */
         justify-content: center;
     }
 
-    .carrinho{
+    .carrinho {
         margin-left: 0;
     }
 
 
 
 
-h2{
-    text-shadow: none;
-}
 
 
 
-    
-    main{
+
+    main {
         padding: 0;
     }
-    main h2{
+
+    main h2 {
         text-align: center;
         margin: 0;
         padding: 0;
         font-size: 4em;
         margin-top: 8%;
+        text-shadow: none;
 
     }
 
-    main .catalago{
+    main .catalago {
         padding: 0;
     }
 
-    .itens-catalago{
+    .itens-catalago {
         padding-right: 2.5%;
         margin-left: 5.5%;
         display: flex;
         justify-content: center;
-    
+
     }
 
-   
-   .fruta-c{
-    padding-right: 7%;
-    padding-left: 0;
-   }
-   
 
-    .catalago{
-        
+    .fruta-c {
+        padding-right: 7%;
+        padding-left: 0;
+    }
+
+
+    .catalago {
+
         padding: 5px;
-        display:flex ;
+        display: flex;
         justify-content: center;
     }
 
-   
 
-    .catalago a{
+
+    .catalago a {
         padding: 0;
         display: flex;
-       justify-content: center;
-       margin-right: 5%;
-       margin-left: 0;
-       
+        justify-content: center;
+        margin-right: 5%;
+        margin-left: 0;
+
     }
 
-    .catalago img{
+    .catalago img {
         padding: 0;
     }
 
-    .catalago :first-child{
+    .catalago :first-child {
         padding-left: 0px;
     }
-   
-.conteudo{
-    flex-direction: column;
-        }
 
-.conteudo .produtos{
-    margin-left: 0;
-        }
-
-footer h3{
-    font-size: 1em;
-        }
-        
+    .conteudo {
+        flex-direction: column;
     }
+
+    .conteudo .produtos {
+        margin-left: 0;
+    }
+
+    footer h3 {
+        font-size: 1em;
+    }
+
+}
