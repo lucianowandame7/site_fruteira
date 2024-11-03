@@ -103,11 +103,11 @@ header {
     border-bottom-right-radius: 10px;
 }
 
-.acoes{
+.acoes {
     display: flex;
 }
 
-.entrar .compras{
+.entrar .compras {
     text-align: center;
 }
 
@@ -124,7 +124,8 @@ header {
     margin-right: 10%;
 }
 
-.logar:hover, .meu-carrinho:hover {
+.logar:hover,
+.meu-carrinho:hover {
     text-decoration: underline;
     color: white;
 }
@@ -365,17 +366,23 @@ footer {
     margin-bottom: 0;
     margin-top: 100%;
     margin: auto;
-    height: 400px;
+    height: 350px;
 
 }
 
 footer .informacoes {
     display: flex;
-    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.349);
     justify-content: space-between;
-    padding: 15px 35px;
+    margin-left: 3%;
+    margin-right: 3%;
     text-align: center;
+}
+
+footer h3 {
+    font-family: "Be Vietnam Pro", sans-serif;
+    margin-right: 0;
 }
 
 footer h3:hover {
@@ -383,18 +390,65 @@ footer h3:hover {
 }
 
 
-.insta {
+
+.institucional a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.institucional a:hover {
+    text-decoration: underline;
+}
+
+
+
+.entregas a {
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.entregas a:hover {
+    text-decoration: underline;
+}
+
+
+.institucional .entrega {
+    display: flex;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    margin-left: 49%;
+    margin-top: 0%;
+}
+
+
+.formasPagamento {
+    display: block;
+
+}
+
+.formasPagamento img {
+    height: 75px;
+    border-radius: 5%;
+}
+
+.RedesSocias {
+    display: block;
+}
+
+.RedesSocias img {
     border-radius: 50%;
     height: 40px;
-    margin-left: 91%;
-    display: flex;
-}
-
-.ctt {
-    margin-left: 68%;
 
 }
 
-a img .insta {
-    width: 100px;
+.direitos {
+    text-align: center;
+    margin-top: 12%;
+    padding: 10px;
+    font-size: 10px;
 }

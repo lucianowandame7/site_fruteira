@@ -181,8 +181,29 @@
         margin-left: 0;
     }
 
+    footer {
+        height: 700px;
+    }
+
     footer h3 {
         font-size: 1em;
+    }
+
+    footer .informacoes {
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .formasPagamento,
+    .entregas,
+    .faleConosco,
+    .RedesSocias {
+        margin-top: 5%;
+    }
+
+    .formasPagamento img,
+    .RedesSocias img {
+        margin-top: 5%;
     }
 
 }
