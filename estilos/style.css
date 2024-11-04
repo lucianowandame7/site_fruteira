@@ -366,7 +366,7 @@ footer {
     margin-bottom: 0;
     margin-top: 100%;
     margin: auto;
-    height: 350px;
+    height: 400px;
 
 }
 
@@ -396,6 +396,8 @@ footer h3:hover {
     text-decoration: none;
     padding: 5px;
     color: white;
+    font-size: 1.2em;
+    
 }
 
 .institucional a:hover {
@@ -409,6 +411,7 @@ footer h3:hover {
     text-decoration: none;
     padding: 5px;
     color: white;
+    font-size: 1.2em;
 }
 
 .entregas a:hover {
@@ -436,6 +439,14 @@ footer h3:hover {
     border-radius: 5%;
 }
 
+
+.fab {
+    color: greenyellow;
+    border-radius: 50%;
+    height: 40px;
+    font-size: 30pt;
+}
+
 .RedesSocias {
     display: block;
 }
@@ -451,4 +462,5 @@ footer h3:hover {
     margin-top: 12%;
     padding: 10px;
     font-size: 10px;
+    color: rgb(228, 228, 228);
 }

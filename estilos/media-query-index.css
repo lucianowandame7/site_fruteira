@@ -182,7 +182,7 @@
     }
 
     footer {
-        height: 700px;
+        height: 780px;
     }
 
     footer h3 {
@@ -192,6 +192,10 @@
     footer .informacoes {
         flex-direction: column;
         margin-top: 20%;
+    }
+
+    .institucional {
+        margin-top: 5%;
     }
 
     .formasPagamento,
@@ -205,5 +209,13 @@
     .RedesSocias img {
         margin-top: 5%;
     }
+
+    .entrega {
+        margin-top: 5px;
+   }
+
+   .fab{
+    margin-top: 10px;
+   }
 
 }
