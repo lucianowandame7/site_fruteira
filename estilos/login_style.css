@@ -26,7 +26,7 @@ main{
     color: rgb(0, 0, 0);
     border-radius: 25px;
     width:68vw;
-    height: 385px;
+    height: 415px;
    position: absolute;
     top: 50%;
     left: 50%;
@@ -52,7 +52,7 @@ main{
 
 img{
     width: 45%;
-    height: 385px;
+    height: 415px;
     border-radius: 10px;
     display: block;
      float: left;

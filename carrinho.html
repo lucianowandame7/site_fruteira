@@ -1,14 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Carrinho</title>
+    <title>Seu Carrinho - Fruteira Açucena</title>
+    <link rel="stylesheet" href="estilos/carrinho.css">
+    
 </head>
 <body>
-    <div id="carrinho">
+    <h1>Carrinho de Compras</h1>
+    <div class="listagemProdutos">
+        <div class="topicos">
+            <h2>Produtos</h2>
+            <h2>Quantidade</h2>
+            <h2>Preços</h2>
+            <p id="total-price">SubTotal: $0</p>
+        </div>
+        <div id="carrinho-container" ></div>
+    
+        <a href="index.html">Voltar aos Produtos</a>
+        <a href="#">Confirmar Compra</a>
+</div>
 
-    </div>
-    <h1>teste</h1>
+    <script>
+   // Recupera a lista de produtos armazenada no sessionStorage
+const carrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
+
+// Obtém o container onde os produtos serão exibidos
+const carrinhoContainer = document.getElementById("carrinho-container");
+
+// Se o carrinho estiver vazio, exibe uma mensagem
+if (carrinho.length === 0) {
+    carrinhoContainer.innerHTML = "<p>Seu carrinho está vazio.</p>";
+} else {
+    // Para cada item no carrinho, cria um parágrafo e o adiciona ao container
+    carrinho.forEach((produto, index) => {
+        const produtoDiv = document.createElement("div");
+        produtoDiv.classList.add("produto");
+
+        // Exibe o nome e preço do produto
+        produtoDiv.innerHTML = `
+            <p>Produto: ${produto.nome}</p>
+            <p>Preço: ${produto.preco}</p>
+            <button onclick="removerProduto(${index})">Remover</button>
+        `;
+
+        carrinhoContainer.appendChild(produtoDiv);
+    });
+}
+
+// Função para remover o item do carrinho
+function removerProduto(index) {
+    // Remove o produto da lista usando o índice
+    const carrinho = JSON.parse(sessionStorage.getItem("carrinho")) || [];
+    carrinho.splice(index, 1); // Remove 1 item no índice especificado
+
+    // Atualiza o sessionStorage com a nova lista
+    sessionStorage.setItem("carrinho", JSON.stringify(carrinho));
+
+    // Atualiza a visualização do carrinho
+    window.location.reload(); // Recarrega a página para refletir as alterações
+}
+
+
+    </script>
 </body>
 </html>
