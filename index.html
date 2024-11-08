@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruteira Açucena</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/media-query-index.css">
     <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
     <link
@@ -18,18 +18,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
     <header>
         <div class="tags">
-            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
-            <div class="itens">
-                <a href="#">Editar perfil</a>
-                <a href="#">Ver historico de compra</a>
-            </div>
             <img src="imagens/logo.jpg" alt="logo" class="logo">
             <h1>AÇUCENA</h1>
         </div>
@@ -55,33 +50,37 @@
         <nav>
             <div class="catalago">
                 <a href="frutas.html">
-                    <img src="imagens/frutas.png" alt="frutas" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/frutas.png" alt="frutas">
+                        <a href="frutas.html" class="fruta-c">Frutas</a>
+                    </div>
                 </a>
                 <a href="vegetais.html">
-                    <img src="imagens/vegetal.png" alt="vegetais" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/vegetal.png" alt="vegetais">
+                        <a href="vegetais.html">Vegetais e Legumes</a>
+                    </div>
                 </a>
                 <a href="limpeza.html">
-                    <img src="imagens/limpando-produtos.png" alt="Limpeza" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/limpando-produtos.png" alt="Limpeza">
+                        <a href="limpeza.html">Limpeza e Higiene</a>
+                    </div>
                 </a>
                 <a href="Alimentos.html">
-                    <img src="imagens/cesta-de-comida.png" alt="alimentos em geral" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/cesta-de-comida.png" alt="alimentos em geral">
+                        <a href="Alimentos.html">Alimentos</a>
+                    </div>
                 </a>
             </div>
-
-            <div class="itens-catalago">
-                <a href="frutas.html" class="fruta-c">Frutas</a>
-                <a href="vegetais.html">Vegetais
-                    <br>e Legumes</a>
-                <a href="limpeza.html">Limpeza
-                    <br>e Higiene</a>
-                <a href="Alimentos.html">Alimentos
-                    <br> em geral</a>
-            </div>
         </nav>
+
+
         <h2>Em Destaque!</h2>
         <!--Parte dos prudtos, com IMAGENS, VALOR e BOTÃO-->
         <section>
-            
+
             <div class="conteudo" id="product-list-container">
                 <div class="produtos">
                     <img src="imagens/coca_cola.jpg" alt="coca-cola" class="imgProduto">
@@ -91,14 +90,14 @@
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/carvao3kg.jfif" alt="carvao3kg" class="carvao3kg">
+                    <img src="imagens/carvao3kg.jfif" alt="carvao3kg">
                     <p class="produtoNome">Carvão 3kg</p>
                     <p class="produtoPreco">R$ 15,99</p>
                     <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/carvao5kg.jfif" alt="carvao5kg" class="carvao5kg">
+                    <img src="imagens/carvao5kg.jfif" alt="carvao5kg">
                     <p class="produtoNome">Carvão 5kg</p>
                     <p class="produtoPreco">R$ 22,99</p>
                     <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
@@ -108,44 +107,44 @@
 
             <div class="conteudo">
                 <div class="produtos">
-                    <img src="imagens/fanta.jpg" alt="Fanta" class="fanta">
+                    <img src="imagens/fanta.jpg" alt="Fanta">
                     <p class="produtoNome">Fanta 2L</p>
                     <p class="produtoPreco">R$ 7,99</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/sprite.jpg" alt="Sprite" class="sprite">
+                    <img src="imagens/sprite.jpg" alt="Sprite">
                     <p class="produtoNome">Sprite 2L</p>
                     <p class="produtoPreco">R$ 7,99</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/batata_b.jpg" alt="Batata branca" class="batata branca">
+                    <img src="imagens/batata_b.jpg" alt="Batata branca">
                     <p class="produtoNome">Batata branca</p>
                     <p class="produtoPreco">R$ 7,98 Kg</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div class="conteudo" style="margin-bottom: 20%;">
                 <div class="produtos">
-                    <img src="imagens/tomatel.jpg" alt="Tomate" class="tomate">
+                    <img src="imagens/tomatel.jpg" alt="Tomate">
                     <p class="produtoNome">Tomate longa vida</p>
                     <p class="produtoPreco">R$ 7,98</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/banana_prata.jpg" alt="Banana Prata" class="banana">
+                    <img src="imagens/banana_prata.jpg" alt="Banana Prata">
                     <p class="produtoNome">Banana Prata</p>
                     <p class="produtoPreco">R$ 6,98 Kg</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/cebola.jpg" alt="Cebola" class="cebola">
+                    <img src="imagens/cebola.jpg" alt="Cebola">
                     <p class="produtoNome">Cebola</p>
                     <p class="produtoPreco">R$ 3,98 Kg</p>
                     <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
@@ -178,13 +177,14 @@
 
             <section class="faleConosco">
                 <h3>Fale conosco</h3>
-                <a href="https://api.whatsapp.com/send?phone=5551994387179" 
-                target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5551994387179" target="_blank"><i
+                        class="fab fa-whatsapp"></i></a>
             </section>
 
             <section class="RedesSocias">
                 <h3>Redes socias</h3>
-                <a href="https://www.instagram.com/fruteiraacucena" target="_blank"><img src="imagens/instagram.jfif" alt="Instagram" class="insta"></a>
+                <a href="https://www.instagram.com/fruteiraacucena" target="_blank"><img src="imagens/instagram.jfif"
+                        alt="Instagram" class="insta"></a>
                 <section>
 
         </div>
@@ -193,7 +193,7 @@
 
         <p class="direitos"> FRUTEIRA AÇUCENA | Razão Social: KOCH HIPERMERCADO S/A | CNPJ 02.831.172/0002-13 |
             Endereço: AV BAYER FILHO, 725. CENTRO. Tijucas/SC. CEP 88.200-000 | Imagens de produtos meramente
-            ilustrativas. | 
+            ilustrativas. |
             É proibida a venda de bebidas alcoólicas para menores de 18 anos, conforme Lei n.° 8069/90, art. 81, inciso
             II
             (Estatuto da Criança e do Adolescente). Bebida Alcoólica pode causar dependência quimica e, em excesso,
@@ -209,5 +209,6 @@
             este não será entregue
             e o valor correspondente não será cobrado. </p>
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+</html>

@@ -25,129 +25,127 @@
     <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
     <header>
         <div class="tags">
-            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
-            <div class="itens">
-                <a href="#">Editar perfil</a>
-                <a href="#">Ver historico de compra</a>
-            </div>
             <img src="imagens/logo.jpg" alt="logo" class="logo">
             <h1>AÇUCENA</h1>
         </div>
 
         <div class="pesquisar">
-            <input type="text" placeholder="Busque os seus produtos aqui..." class="barra">
+            <input type="search" placeholder="Busque os seus produtos aqui..." class="barra" id="search-input">
             <img src="imagens/lupa.png" alt="pesquisar" class="lupa">
             <div class="acoes">
-            <div class="entrar">
-                <img src="imagens/perfil.png" alt="perfil" class="perfil">
-                <a href="login.html" class="logar">Entrar</a>
+                <div class="entrar">
+                    <img src="imagens/perfil.png" alt="perfil" class="perfil">
+                    <a href="login.html" class="logar">Entrar</a>
+                </div>
+                <div class="compras">
+                    <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
+                    <a href="carrinho.html" class="meu-carrinho">Carrinho</a>
+                </div>
             </div>
-            <div class="compras">
-                <img src="imagens/carrinho.png" alt="carrinho" class="carrinho">
-                <a href="carrinho.html" class="meu-carrinho">Carrinho</a>
-            </div>
-        </div>
         </div>
     </header>
-
     <!--Parte dos catalagos, FRUTAS< VERDURAS, LIMPEZA e GERAL-->
+
     <main>
         <nav>
             <div class="catalago">
                 <a href="frutas.html">
-                    <img src="imagens/frutas.png" alt="frutas" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/frutas.png" alt="frutas">
+                        <a href="frutas.html" class="fruta-c">Frutas</a>
+                    </div>
                 </a>
                 <a href="vegetais.html">
-                    <img src="imagens/vegetal.png" alt="vegetais" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/vegetal.png" alt="vegetais">
+                        <a href="vegetais.html">Vegetais e Legumes</a>
+                    </div>
                 </a>
                 <a href="limpeza.html">
-                    <img src="imagens/limpando-produtos.png" alt="Limpeza" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/limpando-produtos.png" alt="Limpeza">
+                        <a href="limpeza.html">Limpeza e Higiene</a>
+                    </div>
                 </a>
                 <a href="Alimentos.html">
-                    <img src="imagens/cesta-de-comida.png" alt="alimentos em geral" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/cesta-de-comida.png" alt="alimentos em geral">
+                        <a href="Alimentos.html">Alimentos</a>
+                    </div>
                 </a>
             </div>
-
-            <div class="itens-catalago">
-                <a href="frutas.html" class="fruta-c">Frutas</a>
-                <a href="vegetais.html">Vegetais
-                    <br>e Legumes</a>
-                <a href="limpeza.html">Limpeza
-                    <br>e Higiene</a>
-                <a href="Alimentos.html">Alimentos
-                    <br> em geral</a>
-            </div>
         </nav>
+        
         <h2>Vegetais e Legumes em Destaque!</h2>
         <!--Parte dos prudtos, com IMAGENS, VALOR e BOTÃO-->
         <section>
             <div class="conteudo">
                 <div class="produtos">
-                    <img src="imagens/batat doce.jfif" alt="Batata Doce Rosa" class="cola">
-                    <p>Batata Doce Rosa</p>
-                    <p class="valor">R$ 3.98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/batat doce.jfif" alt="Batata Doce Rosa">
+                    <p class="produtoNome">Batata Doce Rosa</p>
+                    <p class="produtoPreco">R$ 3.98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/cenoura.jpg" alt="Cenoura" class="carvao3kg">
-                    <p>Cenoura</p>
-                    <p class="valor">R$ 4.98 Kg</p>
-                    <button id="Adicionar"> Adicionar </button>
+                    <img src="imagens/cenoura.jpg" alt="Cenoura">
+                    <p class="produtoNome"></p>Cenoura</p>
+                    <p class="produtoPreco">R$ 4.98 Kg</p>
+                    <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/beterraba.jpg" alt="Beterraba" class="carvao5kg">
-                    <p>Beterraba</p>
-                    <p class="valor">R$ 7.98 Kg</p>
-                    <button id="Adicionar"> Adicionar </button>
+                    <img src="imagens/beterraba.jpg" alt="Beterraba">
+                    <p class="produtoNome"></p>Beterraba</p>
+                    <p class="produtoPreco">R$ 7.98 Kg</p>
+                    <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
 
             <div class="conteudo">
                 <div class="produtos">
-                    <img src="imagens/pimentao-verde.jfif" alt="Pimentão Verde" class="fanta">
-                    <p class="refri">Pimentão Verde</p>
-                    <p class="valor">R$ 9.98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/pimentao-verde.jfif" alt="Pimentão Verde">
+                    <p class="produtoNome"></p>Pimentão Verde</p>
+                    <p class="produtoPreco">R$ 9.98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/pepino.jfif" alt="Pepino Japonês" class="sprite">
-                    <p id="refri">Pepino Japonês</p>
-                    <p class="valor">R$ 9.98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/pepino.jfif" alt="Pepino Japonês">
+                    <p class="produtoNome"></p>Pepino Japonês</p>
+                    <p class="produtoPreco">R$ 9.98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/batata_b.jpg" alt="Batata branca" class="batata branca">
-                    <p>Batata branca</p>
-                    <p class="valor">R$ 7,98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/batata_b.jpg" alt="Batata branca">
+                    <p class="produtoNome"></p>Batata branca</p>
+                    <p class="produtoPreco">R$ 7,98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div class="conteudo" style="margin-bottom: 20%;">
                 <div class="produtos">
-                    <img src="imagens/" alt="Tomate" class="tomate">
-                    <p id="tomate">Tomate longa vida</p>
-                    <p class="valor">R$ 7,98</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/" alt="Tomate">
+                    <p class="produtoNome"></p>Tomate longa vida</p>
+                    <p class="produtoPreco">R$ 7,98</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/moranga.jfif" alt="Moranga" class="banana">
-                    <p>Moranga</p>
-                    <p class="valor">R$ 3.98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/moranga.jfif" alt="Moranga">
+                    <p class="produtoNome"></p>Moranga</p>
+                    <p class="produtoPreco">R$ 3.98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/cebola.jpg" alt="Cebola" class="cebola">
-                    <p id="cebola">Cebola</p>
-                    <p class="valor">R$ 3,98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/cebola.jpg" alt="Cebola">
+                    <p class="produtoNome"></p>Cebola</p>
+                    <p class="produtoPreco">R$ 3,98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
@@ -206,7 +204,7 @@
             este não será entregue
             e o valor correspondente não será cobrado. </p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

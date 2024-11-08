@@ -18,24 +18,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <!--Parte verde no topo, com LOGO, PESQUISAR, ENTRAR e CARRINHO -->
     <header>
         <div class="tags">
-            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">density_medium</span>
-            <div class="itens">
-                <a href="#">Editar perfil</a>
-                <a href="#">Ver historico de compra</a>
-            </div>
             <img src="imagens/logo.jpg" alt="logo" class="logo">
             <h1>AÇUCENA</h1>
         </div>
 
         <div class="pesquisar">
-            <input type="text" placeholder="Busque os seus produtos aqui..." class="barra">
+            <input type="search" placeholder="Busque os seus produtos aqui..." class="barra" id="search-input">
             <img src="imagens/lupa.png" alt="pesquisar" class="lupa">
             <div class="acoes">
                 <div class="entrar">
@@ -49,105 +44,109 @@
             </div>
         </div>
     </header>
-
     <!--Parte dos catalagos, FRUTAS< VERDURAS, LIMPEZA e GERAL-->
+
     <main>
         <nav>
             <div class="catalago">
                 <a href="frutas.html">
-                    <img src="imagens/frutas.png" alt="frutas" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/frutas.png" alt="frutas">
+                        <a href="frutas.html" class="fruta-c">Frutas</a>
+                    </div>
                 </a>
                 <a href="vegetais.html">
-                    <img src="imagens/vegetal.png" alt="vegetais" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/vegetal.png" alt="vegetais">
+                        <a href="vegetais.html">Vegetais e Legumes</a>
+                    </div>
                 </a>
                 <a href="limpeza.html">
-                    <img src="imagens/limpando-produtos.png" alt="Limpeza" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/limpando-produtos.png" alt="Limpeza">
+                        <a href="limpeza.html">Limpeza e Higiene</a>
+                    </div>
                 </a>
                 <a href="Alimentos.html">
-                    <img src="imagens/cesta-de-comida.png" alt="alimentos em geral" class="catalago">
+                    <div class="itens-catalago">
+                        <img src="imagens/cesta-de-comida.png" alt="alimentos em geral">
+                        <a href="Alimentos.html">Alimentos</a>
+                    </div>
                 </a>
             </div>
-
-            <div class="itens-catalago">
-                <a href="frutas.html" class="fruta-c">Frutas</a>
-                <a href="vegetais.html">Vegetais
-                    <br>e Legumes</a>
-                <a href="limpeza.html">Limpeza
-                    <br>e Higiene</a>
-                <a href="Alimentos.html">Alimentos
-                    <br> em geral</a>
-            </div>
         </nav>
+
+
         <h2>Outros Alimentos em Destaque!</h2>
         <!--Parte dos prudtos, com IMAGENS, VALOR e BOTÃO-->
         <section>
             <div class="conteudo">
                 <div class="produtos">
-                    <img src="imagens/arroz_namorado.png" alt="Arroz-Namorado" class="cola">
-                    <p>Arroz Namorado</p>
-                    <p class="valor">R$ 8,99 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/arroz_namorado.png" alt="Arroz-Namorado">
+                    <p class="produtoNome">Arroz Namorado</p>
+                    <p class="produtoPreco">R$ 8,99 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/acucarDaBarra.png" alt="Açúcar Da Barra" class="carvao3kg">
-                    <p>Açúcar da Barra</p>
-                    <p class="valor">R$ 5,98 Kg</p>
-                    <button id="Adicionar"> Adicionar </button>
+                    <img src="imagens/acucarDaBarra.png" alt="Açúcar Da Barra">
+                    <p class="produtoNome">Açúcar da Barra</p>
+                    <p class="produtoPreco">R$ 5,98 Kg</p>
+                    <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/cafeMelita.png" alt="Café Melitta" class="carvao5kg">
-                    <p>Café Melitta</p>
-                    <p class="valor">R$ 22,98 500g</p>
-                    <button id="Adicionar"> Adicionar </button>
+                    <img src="imagens/cafeMelita.png" alt="Café Melitta">
+                    <p class="produtoNome">Café Melitta</p>
+                    <p class="produtoPreco">R$ 22,98 500g</p>
+                    <button id="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
 
             <div class="conteudo">
                 <div class="produtos">
-                    <img src="imagens/molhoFugini.jfif" alt="Molho Fugini" class="fanta">
-                    <p class="refri">Molho Fugini</p>
-                    <p class="valor">R$ 2,98 200g</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/molhoFugini.jfif" alt="Molho Fugini">
+                    <p class="produtoNome">Molho Fugini</p>
+                    <p class="produtoPreco">R$ 2,98 200g</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/milhoFugini.jpeg" alt="Milho Fugini" class="sprite">
-                    <p id="refri">Milho Fugini</p>
-                    <p class="valor">R$ 4,98 200g</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/milhoFugini.jpeg" alt="Milho Fugini">
+                    <p class="produtoNome">Milho Fugini</p>
+                    <p class="produtoPreco">R$ 4,98 200g</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/oleoSojaCoamo.jpg" alt="Oléo de Soja Coamo" class="batata branca">
-                    <p>Oléo Soja Coamo</p>
-                    <p class="valor">R$ 8,99 Kg 900ml</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/oleoSojaCoamo.jpg" alt="Oléo de Soja Coamo">
+                    <p class="produtoNome">Oléo Soja Coamo</p>
+                    <p class="produtoPreco">R$ 8,99 Kg 900ml</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div class="conteudo" style="margin-bottom: 20%;">
                 <div class="produtos">
-                    <img src="imagens/farofaYoki.jpg" alt="Farofa Yoki" class="tomate">
-                    <p id="tomate">Farofa Yoki</p>
-                    <p class="valor">R$ 9,98 400g</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/farofaYoki.jpg" alt="Farofa Yoki">
+                    <p class="produtoNome">Farofa Yoki</p>
+                    <p class="produtoPreco">R$ 9,98 400g</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/farinhaOrquidea.jpg" alt="Farinha trigo orquídea" class="banana">
-                    <p>Farinha trigo orquídea</p>
-                    <p class="valor">R$ 5,98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/farinhaOrquidea.jpg" alt="Farinha trigo orquídea">
+                    <p class="produtoNome">Farinha trigo orquídea</p>
+                    <p class="produtoPreco">R$ 5,98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
 
                 <div class="produtos">
-                    <img src="imagens/" alt="Cebola" class="cebola">
-                    <p id="cebola">Cebola</p>
-                    <p class="valor">R$ 3,98 Kg</p>
-                    <button class="Adicionar"> Adicionar </button>
+                    <img src="imagens/" alt="Cebola">
+                    <p class="produtoNome">Cebola</p>
+                    <p class="produtoPreco">R$ 3,98 Kg</p>
+                    <button class="Adicionar" onclick="adicionarCarrinho(this)"> Adicionar </button>
                 </div>
             </div>
 
@@ -206,6 +205,7 @@
             este não será entregue
             e o valor correspondente não será cobrado. </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
