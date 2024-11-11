@@ -1,5 +1,20 @@
+document.getElementById("search-input").addEventListener("input", function () {
+    const searchValue = this.value.toLowerCase();
+    const products = document.querySelectorAll(".produtos");
+
+    products.forEach((product) => {
+        const productName = product.querySelector(".produtoNome").textContent.toLowerCase();
+        if (productName.includes(searchValue)) {
+            product.style.display = "block"; // Mostrar produtos que correspondem à pesquisa
+        } else {
+            product.style.display = "none"; // Esconder produtos que não correspondem
+        }
+    });
+})
+
+
+
 function adicionarCarrinho(button) {
-    window.alert("Produto adicionado ao carrinho!");
 
     const produtoDiv = button.closest('.produtos');
     const nome = produtoDiv.querySelector('.produtoNome').innerHTML;

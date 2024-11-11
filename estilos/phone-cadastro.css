@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 780px) {
+    body {
+        overflow-x: hidden;
+       
+ 
+    }
+    img {
+        display: none;
+    }
+    #tela-login{
+        margin-top: 60%;
+    }
+
+    .form-group label {
+        display: none;
+    }
+
+    .form-group input {
+        width: 100%;
+        margin: auto;
+    }
+}

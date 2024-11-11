@@ -137,7 +137,8 @@ body {
 
 
 a:hover {
-    background-color: darkseagreen
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
 }
 
 .subtotal {

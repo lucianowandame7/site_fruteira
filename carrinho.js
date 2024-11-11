@@ -126,3 +126,7 @@ function removerProduto(index) {
     // Atualiza a visualização do carrinho e o subtotal
     window.location.reload(); // Recarrega a página para refletir as alterações
 }
+
+document.getElementById("voltar").addEventListener("click", function () {
+    history.back();
+})

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,104 +8,111 @@
     <link rel="stylesheet" href="estilos/cadastro_style.css">
     <link rel="shortcut icon" href="imagens/favicon (1).ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/phone-cadastro.css">
 </head>
+
 <body>
 
     <img src="imagens/logo.jpg" alt="Logotipo">
-    
-<main>
-    <section>
-        
+
+    <main>
+        <section>
+
             <div id="tela-login">
                 <div class="campos">
                     <h1>Novo Cadastro</h1>
                     <p>Dados Pessoais:</p>
                     <form>
-                    <br><br>
-                    <label for="inome">Nome:</label>
-                    <br>
-                    <input type="text" placeholder="Insira o seu nome" name="nome" id="inome" required>
-                     <br><br>
-                    <label for="isnome">Sobrenome:</label>
-                    <br>
-                    <input type="text" placeholder="Insira o seu Sobrenome" name="snome" id="isnome" required>
-                    <br><br>
-                    <label for="idata">Data de Nascimento:</label>
-                    <br>
-                    <input type="date" placeholder="Insira sua data de Nascimento" name="data" id="idata" required>
-                    <br><br>
-                    <label for="inum">Número de celular:</label>
-                    <br>
-                    <input type="number" placeholder="Insira o seu número de celular" name="num" id="inum" required>
-                    <br><br>
-                    <hr>
+                        <div class="form-group">
+                            <label for="inome">*Nome:</label>
+                            <input type="text" placeholder="Insira o seu nome" name="nome" id="inome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="isnome">*Sobrenome:</label>
+                            <input type="text" placeholder="Insira o seu Sobrenome" name="snome" id="isnome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="idata">*Data de Nascimento:</label>
+                            <input type="date" placeholder="Insira sua data de Nascimento" name="data" id="idata"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inum">*Número de celular:</label>
+                            <input type="number" placeholder="Insira o seu número de celular" name="num" id="inum"
+                                required>
+                        </div>
+                        <hr>
                 </div>
 
 
-<div class="campos">
-    
+                <div class="campos">
+
                     <p>Entrega:</p>
-                    <br><br>
                     <form action="cadastro.php">
-                    <label for="idest">Nome do destinatário:</label>
-                    <br>
-                    <input type="text" placeholder="Insira o nome da pessoa que irá receber o pedido" name="dest" id="idest" required>
-                    <br><br>
-                    <label for="iend">Endereço</label>
-                    <br>
-                    <input type="text" placeholder="Insira o nome da sua rua" name="end" id="iend" required>
-                    <br><br>
-                    <label for="inumc">Número</label>
-                    <br>
-                    <input type="number" placeholder="Insira o número do seu endereço" name="numc" id="inumc" required>
-                    <br><br>
-                    <label for="icomple">Complemento</label>
-                    <br>
-                    <input type="text" placeholder="Insira o seu complemento" name="comple" id="icomple" required>
-                    <br><br>
-                    <label for="ibairro">Bairro</label>
-                    <br>
-                    <input type="text" placeholder="Insira o seu bairro" name="bairro" id="ibairro" required>
-                    <br><br>
-                    <label for="icity">Cidade</label>
-                    <br>
-                    <input type="text" name="city" id="icity" placeholder="Insira a sua cidade" required>
-                    <br><br>
-                    <label for="iref">Referencia</label>
-                    <br>
-                    <input type="text" placeholder="Opcional"  name="ref" id="iref" required>
-                    <br><br>
-                    <hr>
+                        <div class="form-group">
+                            <label for="idest">*Nome do destinatário:</label>
+                            <input type="text" placeholder="Insira o nome da pessoa que irá receber o pedido"
+                                name="dest" id="idest" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="iend">*Endereço</label>
+                            <input type="text" placeholder="Insira o nome da sua rua" name="end" id="iend" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inumc">*Número</label>
+                            <input type="number" placeholder="Insira o número do seu endereço" name="numc" id="inumc"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="icomple">*Complemento</label>
+                            <input type="text" placeholder="Insira o seu complemento" name="comple" id="icomple"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ibairro">*Bairro</label>
+                            <input type="text" placeholder="Insira o seu bairro" name="bairro" id="ibairro" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="icity">*Cidade</label>
+                            <input type="text" name="city" id="icity" placeholder="Insira a sua cidade" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="iref">Referência</label>
+                            <input type="text" placeholder="Opcional" name="ref" id="iref" required>
+                        </div>
+                        <hr>
                     </form>
-</div>
+                </div>
 
 
 
-                <div class="campos"> 
+                <div class="campos">
                     <p>Dados da conta:</p>
-                    <br><br>
+
                     <form action="cadastro.php">
-                    <label for="iemail">Email</label>
-                    <br>
-                    <input type="email" placeholder="Insira o seu email" name="email" id="iemail" required>
-                    <br><br>
-                    <label for="ipass">Senha</label>
-                    <br>
-                    <input type="password" placeholder="Insira a sua senha" name="pass" id="ipass" required>
-                    <br><br>
-                    <label for="iconfirm">Confirme sua senha</label>
-                    <br>
-                    <input type="password" placeholder="Repita sua senha" name="confirm" id="iconfirm" required>
-                    <br><br>
-                    <hr>
+                        <div class="form-group">
+                            <label for="iemail">*Email</label>
+                            <input type="email" placeholder="Insira o seu email" name="email" id="iemail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="ipass">*Senha</label>
+                            <input type="password" placeholder="Insira a sua senha" name="pass" id="ipass" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="iconfirm">*Confirme sua senha</label>
+                            <input type="password" placeholder="Repita sua senha" name="confirm" id="iconfirm" required>
+                        </div>
+
+                        <hr>
                     </form>
 
                     <div class="botoes">
-                        <input type="submit" value="Limpar" class="botaoLimpar">
                         <input type="submit" value="Cadastrar" class="botaoCadastrar">
-                  </div>
-        </div>
-    </section>
-</main>
+                    </div>
+                </div>
+        </section>
+    </main>
+
 </body>
+
 </html>

@@ -1,23 +1,23 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 
-body{
-   background-image: linear-gradient(to left,  #4cec4c, #70bf70 );
-   background-size: cover;
-   background-repeat: no-repeat;
-   width: 98vw;
-   height: 250vh;
-   
+body {
+    background-image: linear-gradient(to left, #4cec4c, #70bf70);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98vw;
+    height: 250vh;
+
 
 }
 
 
-img{
+img {
     display: block;
     margin: auto;
     height: 150px;
@@ -27,54 +27,58 @@ img{
 
 }
 
-#tela-login{
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+
+}
+
+#tela-login {
     background-color: rgb(255, 252, 252);
     color: rgb(0, 0, 0);
     border-radius: 25px;
-    margin-top: 45%;
+    margin-top: 25%;
     position: absolute;
+    width: 60%;
     padding: 50px;
     top: 50%;
     left: 50%;
-    font-family:'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
     transform: translate(-50%, -50%);
-   
 }
 
-h1{
-    text-align: center;
-    font-size: 2em;
-      
-}
-
-
-
-label{
-    margin-left: 3%;
-}
-input{
-    border-color: rgb(0, 0, 0);
-    outline: none;
-    font-size: 15px;
-    width: 400px;
-    height: 25px;
-    border-radius: 5px;
-    border: 2px solid black;
-    margin-left: 3%;
-    
-}
-
-
-
-.campos > p{
+.campos>p {
     margin-left: 0;
     margin-top: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
-    
-    
 }
 
-input[type="submit"]{
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px;
+}
+
+.form-group input {
+    font-size: 15px;
+    width: 70%;
+    /* Ajuste conforme necessário */
+    height: 25px;
+    /* Altura aumentada */
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 70%;
+}
+
+input[type="submit"] {
     display: flex;
     justify-content: center;
     background-color: rgb(112, 191, 112);
@@ -90,10 +94,11 @@ input[type="submit"]{
     margin-top: 10px;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: darkseagreen
 }
 
-.botoes{
+.botoes {
     display: flex;
+    justify-content: center;
 }
