@@ -3,13 +3,15 @@
 @media screen and (max-width: 780px) {
     body {
         overflow-x: hidden;
-       
- 
+
+
     }
+
     img {
         display: none;
     }
-    #tela-login{
+
+    #tela-login {
         margin-top: 60%;
     }
 
